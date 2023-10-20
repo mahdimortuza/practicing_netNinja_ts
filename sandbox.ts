@@ -1,19 +1,5 @@
-let character = 'mario';
-let age = 30;
-let isBlackBelt = false;
-
-// character = 20;
-character = 'luigi';
-
-// age = 'yoshi';
-age = 40;
-
-// isBlackBelt = 'yes';
-isBlackBelt = true;
-
-const circ = (diameter: number) => {
-  return diameter * Math.PI;
-};
-
-// console.log(area('hello'));
-console.log(circ(7.5));
+const arr: (number | string | boolean | {})[] = [32, "john", true]
+arr.push("hello")
+arr.push(false)
+arr.push({ name: "komla", age: 23 })
+console.log(arr);
