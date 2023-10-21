@@ -14,4 +14,6 @@ const invTwo = new Invoice('luigi', 'work on luigi website', 300);
 const invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
-console.log(invoices);
+invoices.forEach(inv => {
+    console.log(inv.client, inv.amount, inv.format());
+});
