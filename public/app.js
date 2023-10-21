@@ -10,6 +10,21 @@ const me = {
         return amount;
     }
 };
+const dabul = {
+    name: 'dabul',
+    age: 65,
+    speak(lan) {
+        console.log(lan);
+    },
+    spend(taka) {
+        console.log('dabul spent', taka);
+        return taka;
+    }
+};
+const addDabul = (dabul) => {
+    console.log('abul ekta', dabul.name);
+};
+addDabul(dabul);
 const greetPerson = (person) => {
     console.log('hello', person.name);
 };

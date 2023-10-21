@@ -8,14 +8,29 @@ interface IsPerson {
 const me: IsPerson = {
     name: "kola",
     age: 30,
-    speak(text: string): void{
+    speak(text: string): void {
         console.log(text);
     },
-    spend(amount: number):number {
+    spend(amount: number): number {
         console.log("I spend", amount);
         return amount
     }
 }
+const dabul: IsPerson = {
+    name: 'dabul',
+    age: 65,
+    speak(lan: string): void {
+        console.log(lan);
+    },
+    spend(taka: number): number {
+        console.log('dabul spent', taka);
+        return taka
+    }
+}
+const addDabul = (dabul: IsPerson) => {
+console.log('abul ekta', dabul.name);
+}
+addDabul(dabul)
 
 const greetPerson = (person: IsPerson) => {
     console.log('hello', person.name)
