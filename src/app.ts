@@ -28,9 +28,6 @@
 //     list.render(doc, type.value, 'end')
 // })
 
-
-
-
 let arr: (string | number | [] | {})[] = ["abul", 36]
 
 arr.push(false)
