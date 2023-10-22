@@ -1,4 +1,4 @@
-// export interface HasFormatter {
-//     format(): string
-// }
+export interface HasFormatter {
+    format(): string
+}
 
